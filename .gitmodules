@@ -1,0 +1,8 @@
+[submodule "upstream/pygpt"]
+	path = upstream/pygpt
+	url = https://github.com/diablomike20/PyGPT.git
+	branch = master
+[submodule "upstream/pygpt-addons"]
+	path = upstream/pygpt-addons
+	url = https://github.com/diablomike20/PyGPT_Addons.git
+	branch = master
