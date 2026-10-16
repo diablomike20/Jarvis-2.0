@@ -109,6 +109,24 @@
       "source_audit_document": "docs/10a-heyputer-everything.md",
       "installed": false,
       "notes": "MIT root; review subapp dependencies and Puter AI sign-in; runtime NOT_RUN"
+    },
+    {
+      "repo": "diablomike20/gods-eye-view",
+      "sha": "e2274bbf0ceaeb2e14f8a59d63e77000553c6816",
+      "topic": "geospatial-3d-globe-public-signals-mcp",
+      "status": "R_AND_D_PARKED",
+      "integration_stage": "P6",
+      "source_branch": "sources/pinned-project-baseline",
+      "installed": false,
+      "license_note": "source MIT but third-party datasets and models have separate licenses"
+    },
+    {
+      "repo": "zebbern/no-cost-ai",
+      "sha": null,
+      "topic": "no-cost-provider-reference-only",
+      "status": "R_AND_D_PARKED",
+      "installed": false,
+      "notes": "README free-tier claims must be independently verified; exact commit not yet pinned"
     }
   ]
 }

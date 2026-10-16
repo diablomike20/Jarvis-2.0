@@ -18,7 +18,7 @@ Handoff: https://github.com/diablomike20/Jarvis-2.0/tree/docs/final-handoff-2026
 | PhotoCraft | diablomike20/photocraft | b71991e15a3fc01d3c5848464c14c19b6dc8f2b5 |
 | LightCraft | diablomike20/lightcraft | 7b47ba7894a2563be32ab75176866b6d743df7a4 |
 | FilmCraft | diablomike20/filmcraft | 5231852443363f001c3f6b396dd9b1e6461ae2be |
-| God's Eye View | diablomike20/gods-eye-view | FORK_MAIN_20261016, HEAD pontos commit újrafetch szükséges |
+| God's Eye View | diablomike20/gods-eye-view | e2274bbf0ceaeb2e14f8a59d63e77000553c6816 |
 | HeyPuter Everything | HeyPuter/everything | 06802a1e3749202e4db94d39c9ef5ab1a97d0ef1 |
 | REA | morluto/rea | 1bd5c5c87e81b27bfb16140f71ffa03563e58477 |
 | VoiceStudio | debpalash/VoiceStudio | 28d18023436229830debe8e65faf3eba4426f31b |
@@ -38,3 +38,7 @@ Branch létrehozása nem „telepítés”. Submodule pontos Git objektumhivatko
 
 ## Gépi nyilvántartás
 `catalog/feature-registry.v1.json`, `catalog/acceptance-tests.v1.json`, `catalog/public-source-lock.v1.json`, `catalog/research-reference-lock.v1.json`; jövőben külön `catalog/decisions.v1.json` és `state/current-status.json` is hasznos. Bármely ügynök ellenőrizze az aktuális HEAD-et, mert a fenti SHA-k 2026-10-16 snapshotok.
+
+## 2026-10-16 igazolt nyolcadik public source
+
+A `sources/pinned-project-baseline` branch HEAD: `a728b50752b0360166f01b922a839083f83dcedf`. Tartalmazza a `sources/gods-eye-view` gitlinket, amely a `e2274bbf0ceaeb2e14f8a59d63e77000553c6816` commitra mutat. A nyolc alárendelt forrás közül ez az opcionális P6 3D térinformatikai/MCP jelölt, **nem működő PyGPT funkcióként lett hozzáadva**.

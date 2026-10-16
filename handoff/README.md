@@ -36,3 +36,7 @@ Az eredeti Brahma/JARVIS GUI; semmilyen automatikus 3D Orb újraértelmezés; er
 P0/P1/P2 tényleges Windows rekurzív checkout és PyGPT indítás, Add-ons rendszer ellenőrzése; P3 FCC csak utána. A dokumentáció nem bizonyít futó rendszert.
 
 **Ez a csomag nem helyettesíti a forráskódot: forráshely és pin szerepel, és a tényleges implementációnak a submodule-okból kell dolgoznia.**
+
+## Új kiegészítés: God's Eye View bekerült a forrásgyűjteménybe
+
+2026-10-16: a `sources/pinned-project-baseline` ágon már **8** Git-submodule található, köztük `sources/gods-eye-view` a `e2274bbf0ceaeb2e14f8a59d63e77000553c6816` SHA-n. Teljes technikai megjegyzés: [handoff/03](03-GODS_EYE_VIEW_TECHNIKAI_AUDIT.md). P6/R&D, nem aktív core.

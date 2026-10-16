@@ -68,3 +68,12 @@ VoiceStudio: WER/STT, természetesség, latency p50/p95, VRAM, magyar kiejtés.
 IronRAG: Recall@K, citation correctness, chunk relevancia, RAM/CPU, import/restart.
 DeerFlow: többlépéses feladatteljesítés PyGPT Agents V2-vel szemben, ütközésmentesen.
 Barehands: gesture precision, false positives, CPU/GPU, Windows kamera permission.
+
+## 2026-10-16 új kutatási jelöltek
+
+| Jelölt | Cél | Státusz |
+|---|---|---|
+| `diablomike20/gods-eye-view` @ `e2274bbf0ceaeb2e14f8a59d63e77000553c6816` | Cesium 3D globe, public signal geospatial/MCP, voice/control, térkép- és scene- eszközök | R&D PARKED, P6; source gitlink rögzítve, 03 audit |
+| `zebbern/no-cost-ai` | Ingyenes/free-tier/provider szolgáltatások szerkesztett linkgyűjteménye | R&D REFERENCE ONLY; kvóta és hozzáférés validálatlan |
+
+A `diablomike20/Free-Claude-AI` privát Puter.js böngészős kliens: security audit `handoff/04`, nem `ai_proxy_2` core és nem kerül public source-katalógusba.

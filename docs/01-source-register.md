@@ -56,3 +56,7 @@ A feltöltött JARVIS-beszélgetés-exportokban és hanganyagokban lehet személ
 ## Tényleges külön forrásgyűjtemény-ág
 
 **sources/pinned-project-baseline** @ 1da31bdd7850665d963906dfc8a4d97b2788e94d — 7 nyilvános Git submodule: PyGPT, PyGPT_Addons, original JARVIS, PhotoCraft, LightCraft, FilmCraft, FCC upstream. A branch saját .gitmodules és sources-manifest.json fájlt tartalmaz. Ezzel a később sorra kerülő programrészek forrása a Jarvis-2.0 keretében visszakereshető, de NINCS futtatva vagy összeolvasztva. A kutatási 16 repó továbbra is pinelt külső referencia, nem kötelező checkout. A privát AI-Proxy nem itt van.
+
+## 2026-10-16 frissítés — God's Eye View
+
+A `diablomike20/gods-eye-view` public fork `main` referencia `e2274bbf0ceaeb2e14f8a59d63e77000553c6816`; a `Jarvis-2.0` `sources/pinned-project-baseline` commitja `a728b50752b0360166f01b922a839083f83dcedf` már ezt a nyolcadik submodule-t is tartalmazza. A live feed/dataset/model license külön audit, nem teljes MIT adatcsomag. Forrás: https://github.com/diablomike20/gods-eye-view, audit: `handoff/03-GODS_EYE_VIEW_TECHNIKAI_AUDIT.md`.
