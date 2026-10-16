@@ -1,0 +1,73 @@
+# JARVIS 2.0 — teljes funkcióspecifikáció
+
+&#x20;GitHubra feltöltve
+
+Elkészült a Project Icarus / JARVIS UNIFIED átfogó, magyar nyelvű funkcionális alapdokumentuma.
+
+[JARVIS 2.0 — teljes funkcióspecifikáció](https://github.com/diablomike20/Jarvis-2.0/blob/docs/master-spec-20261016/docs/16-jarvis20-complete-feature-specification.md?utm_source=chatgpt.com)
+
+23 809 karakteres alapdokumentum • 16 fejezet • külön dokumentációs ág
+
+Commit: [83afe4b](https://github.com/diablomike20/Jarvis-2.0/commit/83afe4b6082ccf3369c2b0d8d1abb114668a848e?utm_source=chatgpt.com)
+
+A leírás kiterjed az eredeti JARVIS/Brahma megőrzendő funkcióira, a PyGPT motorra, az Add-ons ökoszisztémára, a Free Claude Code integrációjára, a memóriára, az önfejlesztési és biztonsági szabályokra, valamint a későbbi kreatív és CAD-képességekre.
+
+A HeyPuter/Everything külön szerepel benne: nagy potenciálú kutatási jelöltként, nem automatikusan beépített és bizonyított funkcióként.
+
+Most ezt egy részletesebb, modulonként ellenőrizhető fejlesztői mellékletsorozattal és géppel olvasható funkciójegyzékkel egészítem ki.
+
+## Elkészültek a részletes mellékletek is
+
+[16a — Az eredeti JARVIS/Brahma funkcióinak megőrzése](https://github.com/diablomike20/Jarvis-2.0/blob/docs/master-spec-20261016/docs/16a-jarvis-original-preservation.md?utm_source=chatgpt.com)
+
+Az eredeti 50 `actions/` modul külön-külön, tervezett szereppel, megőrzési feltételekkel, GUI-követelményekkel és kockázatokkal.
+
+[16b — PyGPT, Free Claude Code és Add-ons képességmátrix](https://github.com/diablomike20/Jarvis-2.0/blob/docs/master-spec-20261016/docs/16b-core-ai-addons-capability-matrix.md?utm_source=chatgpt.com)
+
+Mind a 40 PyGPT plugin-könyvtár, 16 asztali eszköz, modellútválasztás, memória, RAG, beszédadapterek, MCP-k, Skills-ek, felelősségi és tesztelési követelmények.
+
+[16c — Kreatív műhely, FreeCAD és HeyPuter Everything](https://github.com/diablomike20/Jarvis-2.0/blob/docs/master-spec-20261016/docs/16c-creative-rnd-heyputer-roadmap.md?utm_source=chatgpt.com)
+
+PhotoCraft, LightCraft, FilmCraft, FreeCAD, Blender, a HeyPuter 51 ellenőrzött alkalmazásmappája, AI CAD, 3D modellezés, valamint a későbbi REA, VoiceStudio és IronRAG lehetőségek.
+
+[Géppel feldolgozható funkcióregiszter](https://github.com/diablomike20/Jarvis-2.0/blob/docs/master-spec-20261016/catalog/feature-registry.v1.json?utm_source=chatgpt.com)
+
+Strukturált JSON, amelyből egy későbbi AI-fejlesztőügynök konkrét funkciókat, forrásokat, tervezett fázisokat és ellenőrzési állapotokat tud feldolgozni.
+
+## A dokumentáció számszerű összesítése
+
+# 65
+
+Részletezett funkciócél
+
+# 157
+
+További forráskomponens-rekord
+
+# 74
+
+Eredeti elfogadási teszt
+
+A 157 forráskomponens-rekord az eredeti JARVIS 50 akciómoduljából, a PyGPT 40 plugin-könyvtárából, 16 alkalmazáseszközéből és az 51 HeyPuter-alkalmazásmappából áll. Ezek között vannak egymással átfedő képességek is, tehát nem 157 újonnan elkészült funkcióról beszélünk.
+
+A korábbi HeyPuter-elemzésben pontosítottam a darabszámot, a fejlesztői átadási dokumentumot és a migrációs naplót is frissítettem.
+
+## Átadás az új chatnek
+
+A következő kollégának ezt a két oldalt érdemes elsőként megadnod:
+
+[Project Icarus — teljes dokumentációs ág](https://github.com/diablomike20/Jarvis-2.0/tree/docs/master-spec-20261016?utm_source=chatgpt.com)
+
+[Fejlesztői átadási és önképzési protokoll](https://github.com/diablomike20/Jarvis-2.0/blob/docs/master-spec-20261016/docs/11-agent-handoff.md?utm_source=chatgpt.com)
+
+A handoffot frissítettem: az új fejlesztőnek a 16-os teljes funkcióspecifikációt és mellékleteit is kötelező tanulmányoznia, nem elegendő a README átfutása.
+
+Végső GitHub-ellenőrzés sikeres
+
+A dokumentációs ág aktuális commitja: [fbd27ac](https://github.com/diablomike20/Jarvis-2.0/commit/fbd27ac251c86733e087de3e2a17bf01cfe774fc?utm_source=chatgpt.com). Az új fájlokat visszaellenőriztem, a `main` változatlan.
+
+Fontos: a dokumentáció elkészült, nem a teljes JARVIS-integráció. A Free-Claude-AI bejelentkezési biztonsági vizsgálata továbbra sem lezárt; ha gyanús felületen adtál meg jelszót vagy tokent, azt érdemes visszavonni, illetve megváltoztatni.
+
+A projekt most már rendelkezik egy olyan részletes, verziózott funkciótérképpel, amelyre a következő fejlesztési fázisok és az új AI-kolléga munkája építhető.
+
+Project Icarus dokumentációs átadás: elkészült. 😎
