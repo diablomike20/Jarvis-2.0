@@ -49,3 +49,10 @@ Forrásbeemelés ≠ működő integráció. Dokumentációs commit ≠ végreha
 - Commit 1da31bdd7850665d963906dfc8a4d97b2788e94d: .gitmodules, README.md, sources-manifest.json és 7 public Git submodule.
 - Minden submodule pontosan a 01-source-register.md táblázat commitjára mutat; az eltérő jogi/telepítési feltételek miatt nem történt automatikus build.
 - A GitHub faobjektumok sikeresen létrejöttek. Rekurzív klónozás tesztje továbbra is NOT_RUN.
+
+## 2026-10-16 — HeyPuter/everything forrásaudit
+
+- Változtatás kizárólag a dokumentációs ágon, a main változatlan.
+- Rögzített upstream SHA: `06802a1e3749202e4db94d39c9ef5ab1a97d0ef1`; a 60 app és a 32 364 Git-fájl forrásfában megfigyelt.
+- `docs/10a-heyputer-everything.md` részletes vizsgálat; kutatási backlog és referencia-lock frissítve.
+- Nincs submodule/beépítés a CORE-ba, nincs npm install/build, nincs Puter-login, nincs külső adatküldés.

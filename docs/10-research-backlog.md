@@ -23,6 +23,7 @@ CORE_SOURCE = jelenlegi stratégiai motor; HIGH_VALUE_CANDIDATE = nagy potenciá
 | jaredrhod/ai-memory-vault | Obsidian Markdown személyes memória | personal context, napi jegyzetek | PARKED — IronRAG nem helyettesíti |
 | jaredrhod/backtalk | local Whisper/Kokoro, voice approval, interrupt | streaming és approval minták | PARKED |
 | jaredrhod/ai-visualizer | Canvas/JS state bus és 4 arc | animációs protokoll; eredeti HUD marad | PARKED |
+| HeyPuter/everything | 60 webes app (Parametric AI CAD, 3D, CAD, Photo/Video/Audio, API Client), MIT főrepo | P6 kreatív/CAD alternatívák, webes tool-host PoC | HIGH_VALUE_CANDIDATE / PARKED — [részletes audit](10a-heyputer-everything.md) |
 | jaredrhod/barehands | MediaPipe+Three.js kamera/gesztus/3D board | térbeli JARVIS HUD opcionális extra | HIGH_VALUE_CANDIDATE / P6 |
 
 ## REA — külön megfigyelések

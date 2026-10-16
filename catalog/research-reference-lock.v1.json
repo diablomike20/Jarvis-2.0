@@ -99,6 +99,16 @@
       "sha": "eb23bed2d772f9d5a24de26fb92f46c3c76d69cf",
       "topic": "gesture-3d-ui",
       "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "HeyPuter/everything",
+      "sha": "06802a1e3749202e4db94d39c9ef5ab1a97d0ef1",
+      "topic": "web-app-suite-cad-3d-creative-ai-tooling",
+      "status": "R_AND_D_PARKED",
+      "integration_stage": "P6",
+      "source_audit_document": "docs/10a-heyputer-everything.md",
+      "installed": false,
+      "notes": "MIT root; review subapp dependencies and Puter AI sign-in; runtime NOT_RUN"
     }
   ]
 }
