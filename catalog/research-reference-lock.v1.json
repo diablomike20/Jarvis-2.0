@@ -109,6 +109,25 @@
       "source_audit_document": "docs/10a-heyputer-everything.md",
       "installed": false,
       "notes": "MIT root; review subapp dependencies and Puter AI sign-in; runtime NOT_RUN"
+    },
+    {
+      "repo": "diablomike20/gods-eye-view",
+      "sha": "e2274bbf0ceaeb2e14f8a59d63e77000553c6816",
+      "topic": "geospatial-3d-public-data-mcp",
+      "status": "HIGH_VALUE_CANDIDATE_PARKED",
+      "integration_stage": "P6_OPTIONAL",
+      "source_audit_document": "docs/17-gods-eye-view-geospatial-audit.md",
+      "installed": false,
+      "runtime_tested": false,
+      "explicit_owner_approval_required": true,
+      "code_license": "MIT; third-party data separate"
+    },
+    {
+      "repo": "zebbern/no-cost-ai",
+      "topic": "provider-list-free-tier-unverified",
+      "status": "R_AND_D_PARKED",
+      "installed": false,
+      "source_audit_document": "docs/19-provider-catalog-and-auth-research.md"
     }
   ]
 }

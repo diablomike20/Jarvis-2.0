@@ -227,3 +227,12 @@ Külön követelményenként: feature_id, tulajdonos, forrás SHA, runtime, tesz
 - A forrásból ellenőrzött számok és a README kijelentések közötti eltérést (*Everything 51 src könyvtár vs 60 meghirdetett app*) dokumentáljuk, nem tüntetjük el.
 
 **Jelenlegi végeredmény:** ez egy részletes, implementálásra előkészített célspecifikáció, és nem a JARVIS 2.0 már működő változatának leírása. A felhasználó által elfogadott sorrend és a parkoltatott opcionális technológiák határa változatlan.
+
+
+## 17. Új opcionális GeoSpatial Console és teljes end-to-end atlasz (2026-10-16)
+
+A felhasználó új forrása: [God's Eye View fork](https://github.com/diablomike20/gods-eye-view) @ `e2274bbf0ceaeb2e14f8a59d63e77000553c6816`, eredeti Bilawal Sidhu projekt. MIT kód, külső adatokon egyedi licencfeltételek; CesiumJS 3D globe, időjárás/terepi és közlekedési rétegek, kamera, műhold, hang, Scene Director, MCP stdio/HTTP és MCP Apps panel. A README tételes táblájában **23 rétegsor**, a tools dokumentációban **40 MCP eszköz** ellenőrzött (ez a szám nem azonos a 30 voice tool állítással). Az alkalmazás nem élő katonai műhold, a mozgó/3D adatok egy része interpolált/szimulált/becsült.
+
+**Beszúrás a JARVIS tervbe:** külön helyi Node/Cesium szolgáltatás és későbbi PyGPT MCP + JARVIS Qt WebEngine adapter. NINCS kész megvalósítás, nincs automatikus éles bekapcsolás. Besorolás: `P6_OPTIONAL / HIGH_VALUE_CANDIDATE / PARKED_RND`. „Stark Industries engedély” = konkrét felhasználói jóváhagyás a modul aktiválásához, nem valódi vállalati jogosítás.
+
+Részletek: [17 — teljes geotérbeli audit és 30 ellenőrzés](17-gods-eye-view-geospatial-audit.md) · [Gépi leltár](../catalog/gods-eye-view.capability-registry.v1.json) · [18 — 34 végponttól végpontig felhasználói funkció](18-e2e-functional-atlas.md) · [19 — modellforrás és bejelentkezési kockázatok](19-provider-catalog-and-auth-research.md).

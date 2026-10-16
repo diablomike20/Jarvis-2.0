@@ -10,6 +10,16 @@
 
 **FONTOS:** célfunkció ≠ elkészült implementáció; katalogizált plugin ≠ telepített plugin; átköltöztetett Git submodule ≠ működő integráció. A HeyPuter/Everything és a VoiceStudio/IronRAG/Barehands kutatási jelöltek, nem automatikus P2 szolgáltatások.
 
+
+## ÚJ: 2026-10-16 — God's Eye View és funkciótérkép
+
+- [17 — God's Eye View részletes forrásaudit: 23 rétegsor, 40 MCP eszköz, 30 teszt](docs/17-gods-eye-view-geospatial-audit.md)
+- [18 — 34 JARVIS felhasználói funkció/folyamat szerződés](docs/18-e2e-functional-atlas.md)
+- [19 — no-cost-ai / Puter-alapú login referencia és biztonság](docs/19-provider-catalog-and-auth-research.md)
+- [God's Eye View gépi képességjegyzék](catalog/gods-eye-view.capability-registry.v1.json)
+
+Az új GeoSpatial Console **nem bekapcsolt és nem kötelező P2 modul**. `P6_OPTIONAL / PARKED_RND / explicit projektgazdai engedély (Stark Industries Approval Gate)`. A jelenlegi eredeti JARVIS HUD védett.
+
 ## Tartalomjegyzék
 
 | Dokumentum | Téma |
