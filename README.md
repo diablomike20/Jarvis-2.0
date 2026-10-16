@@ -2,6 +2,14 @@
 
 > **Dokumentációs ág, 2026-10-16.** Ez az ág a részletes műszaki dokumentáció forrása. Nem futtatható JARVIS-kiadás. A valóságot és a célállapotot tudatosan külön kezeljük.
 
+## Első olvasnivaló új fejlesztőchat számára
+
+1. [16 — teljes JARVIS 2.0 funkcióspecifikáció](docs/16-jarvis20-complete-feature-specification.md), utána a 16a/16b/16c részletes mellékletek.
+2. [00–15 projektalkotmány, architektúra, fázisok, források és handoff](docs/11-agent-handoff.md).
+3. [Géppel olvasható funkciójegyzék](catalog/feature-registry.v1.json) és [acceptance tesztek](catalog/acceptance-tests.v1.json).
+
+**FONTOS:** célfunkció ≠ elkészült implementáció; katalogizált plugin ≠ telepített plugin; átköltöztetett Git submodule ≠ működő integráció. A HeyPuter/Everything és a VoiceStudio/IronRAG/Barehands kutatási jelöltek, nem automatikus P2 szolgáltatások.
+
 ## Tartalomjegyzék
 
 | Dokumentum | Téma |
@@ -23,6 +31,11 @@
 | [13 — Nyitott döntések](docs/13-risks-and-open-questions.md) | Bizonytalanságok, blokkolók, döntésnapló |
 | [14 — Napló és bizonyítékok](docs/14-migration-log.md) | Tényleges GitHub-műveletek, kész/nem kész |
 | [15 — ADR](docs/15-architecture-decisions.md) | Elfogadott irányok vs. javaslatok |
+| **[16 — JARVIS 2.0 teljes funkcióspecifikáció](docs/16-jarvis20-complete-feature-specification.md)** | **65 tételes tervezett funkciócél — GUI, AI, voice, memory, desktop, creative, biztonság, end-to-end** |
+| [16a — Eredeti JARVIS funkciómegőrzés](docs/16a-jarvis-original-preservation.md) | 50 tényleges actions/ forrásmodul és GUI baseline védelme |
+| [16b — PyGPT/FCC/Add-ons képességmátrix](docs/16b-core-ai-addons-capability-matrix.md) | 40 plugin, 16 tool és modell/tool ownership, routing, tesztek |
+| [16c — Kreatív és HeyPuter P6 melléklet](docs/16c-creative-rnd-heyputer-roadmap.md) | PhotoCraft, LightCraft, FilmCraft, FreeCAD; 51 ellenőrzött HeyPuter app-könyvtár; alpha/privát felhő caveatok |
+| **[Gépi funkcióregiszter](catalog/feature-registry.v1.json)** | **65 célrekord + 50 eredeti actions modul + 40 plugin + 16 PyGPT tool + 51 HeyPuter app; minden runtime NOT_RUN** |
 
 ## Forráskód beköltözése
 
