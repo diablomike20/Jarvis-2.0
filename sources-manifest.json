@@ -57,6 +57,14 @@
       "sha": "c5239619be489ff393fff29caf838c8a5a957454",
       "purpose": "P3 PUBLIC FCC upstream reference, not linked to private AI-Proxy",
       "installed": false
+    },
+    {
+      "path": "sources/gods-eye-view",
+      "repo": "https://github.com/diablomike20/gods-eye-view.git",
+      "branch": "main",
+      "sha": "e2274bbf0ceaeb2e14f8a59d63e77000553c6816",
+      "purpose": "R&D only - Cesium geospatial live-signal globe and MCP, not installed in core",
+      "installed": false
     }
   ],
   "private_sources_excluded": true,

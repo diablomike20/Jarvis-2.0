@@ -26,3 +26,7 @@ git -C Jarvis-2.0 submodule update --init --recursive
 - A PyGPT forrás licence, az AGPL-3.0-only FCC, egyes kreatív szoftverek és külső modellek licencfeltételeit továbbra is ellenőrizni kell, ha később összevonás/terjesztés történik.
 - A submodule nem offline archive: checkout hálózati elérését és license notice fájlokat meg kell őrizni.
 - Telepíthető PyGPT baseline: integration/pygpt-addons-baseline ág. Részletes dokumentáció: docs/master-spec-20261016 ág.
+
+## God's Eye View — kutatási forrás (2026-10-16)
+
+A `sources/gods-eye-view` nyilvános Git-submodule a `diablomike20/gods-eye-view` pontos `e2274bbf0ceaeb2e14f8a59d63e77000553c6816` commitjára mutat. P6/R&D, **NEM PyGPT-integráció és nem GUI-csere**. A kód MIT, a valós idejű feedek, térképcsempék és mellékelt adatállományok ettől eltérő licencekhez lehetnek kötve. MCP/Node követelmények: lásd `docs/final-handoff-20261016/handoff/03` és a forrás `docs/MCP_SETUP.md` dokumentációját.

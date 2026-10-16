@@ -26,3 +26,8 @@
 	path = sources/fcc-upstream
 	url = https://github.com/Alishahryar1/free-claude-code.git
 	branch = main
+
+[submodule "sources/gods-eye-view"]
+	path = sources/gods-eye-view
+	url = https://github.com/diablomike20/gods-eye-view.git
+	branch = main
