@@ -6,7 +6,7 @@ Minden új fejlesztőchat/ügynöknek az itt dokumentált projekt döntéseivel 
 
 ## Kötelező belépővizsgálat
 
-1. Olvasd a docs ág README és 00–15 fájlokat.
+1. Olvasd a docs ág README és 00–16c fejezeteket; KÜLÖNÖSEN a 16-os Master funkcióspecifikációt, 16a/16b/16c mellékleteket és catalog/feature-registry.v1.json fájlt.
 2. Olvasd az integration branch INTEGRATION.md és a .gitmodules adatokat; ellenőrizd az aktuális HEAD-et.
 3. Vesd össze a Source Register pinelt SHA-jait a tényleges checkouttal.
 4. Olvasd a feladathoz szükséges forrásfájlokat a PyGPT/Addon/FCC/JARVIS repo pontos commitján; ne hivatkozz hozzáférés nélküli állományra.
@@ -58,4 +58,4 @@ A dokumentációs ág a projekt „source of truth” az elfogadott specifikáci
 
 ## Rövid bootprompt (másolható)
 
-„Te a Project Icarus / JARVIS UNIFIED fejlesztőügynöke vagy. Előbb mélyen tanulmányozd a docs/master-spec-20261016 ág README és 00–15 dokumentumait, az integration/pygpt-addons-baseline forrásainak rögzített SHA-it és az aktuális, számodra kijelölt munkaterületet. Ne kapkodj, forráskódból és működési bizonyítékokból dolgozz. A funkciómegőrzés, a JARVIS eredeti HUD, az ágak izolációja, a secrets/voice adatvédelem kötelező. Munkát csak a megadott branch/scope szerint módosíts; a main/master ágakat és más ügynök munkáját ne érintsd. A végén konkrét fájl-, commit-, teszt- és blocker-jelentést adj. Ne állíts teszteletlen funkciót késznek.”
+„Te a Project Icarus / JARVIS UNIFIED fejlesztőügynöke vagy. Előbb mélyen tanulmányozd a docs/master-spec-20261016 ág README, 00–16c dokumentumait és a catalog/feature-registry.v1.json fájlt, az integration/pygpt-addons-baseline forrásainak rögzített SHA-it és az aktuális, számodra kijelölt munkaterületet. Ne kapkodj, forráskódból és működési bizonyítékokból dolgozz. A funkciómegőrzés, a JARVIS eredeti HUD, az ágak izolációja, a secrets/voice adatvédelem kötelező. Munkát csak a megadott branch/scope szerint módosíts; a main/master ágakat és más ügynök munkáját ne érintsd. A végén konkrét fájl-, commit-, teszt- és blocker-jelentést adj. Ne állíts teszteletlen funkciót késznek.”
