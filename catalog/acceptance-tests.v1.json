@@ -1,0 +1,605 @@
+{
+  "schema_version": "1.0.0",
+  "status_policy": [
+    "NOT_RUN",
+    "PASS",
+    "FAIL",
+    "BLOCKED",
+    "SKIPPED_APPROVED"
+  ],
+  "generated_at": "2026-10-16",
+  "tests": [
+    {
+      "phase": "P0",
+      "id": "BASE-001",
+      "criteria": "Base source commits match locked SHAs",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P0",
+      "id": "BASE-002",
+      "criteria": "Target main unchanged from initial SHA",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P0",
+      "id": "BASE-003",
+      "criteria": "License and dependency manifest traced for all shipped components",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P0",
+      "id": "BASE-004",
+      "criteria": "Original JARVIS HUD screenshot/video baseline recorded",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P0",
+      "id": "BASE-005",
+      "criteria": "Isolated PySide6 Qt feasibility prototype passes",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P1",
+      "id": "REPO-001",
+      "criteria": "Document branch created and readable",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P1",
+      "id": "REPO-002",
+      "criteria": "Integration branch isolated from main",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P1",
+      "id": "REPO-003",
+      "criteria": "Submodules point to immutable commits",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P1",
+      "id": "REPO-004",
+      "criteria": "Recursive clone succeeds and source HEADs match",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P1",
+      "id": "REPO-005",
+      "criteria": "Full source rehydrate/recovery procedure documented",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-001",
+      "criteria": "PyGPT Windows Python env created from lock",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-002",
+      "criteria": "PyGPT Qt GUI launches and exits cleanly",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-003",
+      "criteria": "PyGPT chat sends and receives model answer",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-004",
+      "criteria": "PyGPT baseline plugins registry loads",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-005",
+      "criteria": "16 built-in app tools discoverable",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-006",
+      "criteria": "One trusted Add-on installed from immutable ref",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-007",
+      "criteria": "One Skill selected and executed",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-008",
+      "criteria": "One local, harmless MCP works end-to-end",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-009",
+      "criteria": "Nonexistent MCP fails closed and is classified",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-010",
+      "criteria": "Risky system tool is denied by permission policy",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-011",
+      "criteria": "RAG sample document round-trip and citation verified",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-012",
+      "criteria": "Invalid provider key produces typed failure",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-013",
+      "criteria": "PyGPT agents v2 task lifecycle trace",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P2",
+      "id": "PY-014",
+      "criteria": "No function loss after Add-on installation",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-001",
+      "criteria": "FCC separate Python 3.14.7 process runs",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-002",
+      "criteria": "Localhost-only listener verified",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-003",
+      "criteria": "Admin endpoint requires auth",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-004",
+      "criteria": "Default static tokens absent",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-005",
+      "criteria": "Messages API happy path",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-006",
+      "criteria": "Responses API happy path",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-007",
+      "criteria": "Token count API checks",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-008",
+      "criteria": "Streaming chunks arrive in order",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-009",
+      "criteria": "Tool call JSON schema/args survive protocol translation",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-010",
+      "criteria": "Reasoning block/finish reason survives mapping",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-011",
+      "criteria": "Invalid model fails with typed error",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-012",
+      "criteria": "Rate limit and backoff tests",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-013",
+      "criteria": "Model fallback respects privacy/cost policy",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-014",
+      "criteria": "Permission deny stops coding tool",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-015",
+      "criteria": "Cancellation terminates child process",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-016",
+      "criteria": "Code session in isolated Git worktree",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-017",
+      "criteria": "Secrets excluded from logs",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P3",
+      "id": "FCC-018",
+      "criteria": "PyGPT native provider unaffected",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P4",
+      "id": "E2E-001",
+      "criteria": "PyGPT orchestrator delegates to FCC exactly once",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P4",
+      "id": "E2E-002",
+      "criteria": "No circular task delegation",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P4",
+      "id": "E2E-003",
+      "criteria": "No duplicate writes after SSE disconnect/retry",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P4",
+      "id": "E2E-004",
+      "criteria": "Task cancel idempotent",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P4",
+      "id": "E2E-005",
+      "criteria": "Stale responses cannot overwrite new state",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P4",
+      "id": "E2E-006",
+      "criteria": "Mixed native/remote routing works",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P4",
+      "id": "E2E-007",
+      "criteria": "Crash/restart replays accurate task status",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P4",
+      "id": "E2E-008",
+      "criteria": "Approval expires and denies",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P4",
+      "id": "E2E-009",
+      "criteria": "Memory persists and is workspace isolated",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P4",
+      "id": "E2E-010",
+      "criteria": "Rollback to stable baseline succeeds",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-001",
+      "criteria": "Original JARVIS animation asset hashes matched",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-002",
+      "criteria": "Frame screenshot baseline comparison",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-003",
+      "criteria": "DPI scaling and multi-monitor parity",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-004",
+      "criteria": "Window transparency/topmost parity",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-005",
+      "criteria": "QThread shutdown race absent",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-006",
+      "criteria": "QWebEngine IPC and origin validation",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-007",
+      "criteria": "Mic listening states map to animation",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-008",
+      "criteria": "TTS waveform maps to animation",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-009",
+      "criteria": "Interrupt during speech is synchronous",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-010",
+      "criteria": "Tool approval overlay deny/approve work",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-011",
+      "criteria": "Every required PyGPT feature reachable from HUD",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P5",
+      "id": "UI-012",
+      "criteria": "Expert GUI fallback if retained",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P6",
+      "id": "EX-001",
+      "criteria": "Hungarian TTS pronunciation quality measured",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P6",
+      "id": "EX-002",
+      "criteria": "Voice model rights and provenance cleared",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P6",
+      "id": "EX-003",
+      "criteria": "PhotoCraft feature contract tested",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P6",
+      "id": "EX-004",
+      "criteria": "LightCraft feature contract tested",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P6",
+      "id": "EX-005",
+      "criteria": "FilmCraft feature contract tested",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P6",
+      "id": "EX-006",
+      "criteria": "FreeCAD adapter param and export tests",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P6",
+      "id": "EX-007",
+      "criteria": "Optional IronRAG benchmark over PyGPT RAG",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P6",
+      "id": "EX-008",
+      "criteria": "Optional REA isolation/evidence tests",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P6",
+      "id": "EX-009",
+      "criteria": "Optional Barehands gesture false-positive tests",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    },
+    {
+      "phase": "P6",
+      "id": "EX-010",
+      "criteria": "Windows packaging, reinstall and rollback",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "owner": null
+    }
+  ]
+}

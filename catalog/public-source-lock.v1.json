@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "project": "Jarvis-2.0",
+  "codename": "Project Icarus",
+  "generated_at": "2026-10-16",
+  "visibility": "public",
+  "sources": [
+    {
+      "id": "pygpt",
+      "repo": "diablomike20/PyGPT",
+      "ref": "master",
+      "sha": "2d8779a983edc73846a640bbbda1dcc7d513d924",
+      "role": "core",
+      "state": "SUBMODULE_ON_INTEGRATION_BRANCH"
+    },
+    {
+      "id": "pygpt_addons",
+      "repo": "diablomike20/PyGPT_Addons",
+      "ref": "master",
+      "sha": "15759ba00cab37622e0b9f5b302c73fc7aa56a50",
+      "role": "addon-registry",
+      "state": "SUBMODULE_ON_INTEGRATION_BRANCH"
+    },
+    {
+      "id": "jarvis_original",
+      "repo": "diablomike20/Jarvis-Ai",
+      "ref": "main",
+      "sha": "e0bd3c5a3a258cc1cf35014ae0a35c7b6b9db87f",
+      "role": "ui-baseline",
+      "state": "REFERENCE_ONLY"
+    },
+    {
+      "id": "fcc_upstream",
+      "repo": "Alishahryar1/free-claude-code",
+      "ref": "main",
+      "sha": "c5239619be489ff393fff29caf838c8a5a957454",
+      "role": "future-gateway",
+      "state": "REFERENCE_ONLY"
+    },
+    {
+      "id": "photocraft",
+      "repo": "diablomike20/photocraft",
+      "ref": "main",
+      "sha": "b71991e15a3fc01d3c5848464c14c19b6dc8f2b5",
+      "role": "future-creative",
+      "state": "REFERENCE_ONLY"
+    },
+    {
+      "id": "lightcraft",
+      "repo": "diablomike20/lightcraft",
+      "ref": "main",
+      "sha": "7b47ba7894a2563be32ab75176866b6d743df7a4",
+      "role": "future-creative",
+      "state": "REFERENCE_ONLY"
+    },
+    {
+      "id": "filmcraft",
+      "repo": "diablomike20/filmcraft",
+      "ref": "main",
+      "sha": "5231852443363f001c3f6b396dd9b1e6461ae2be",
+      "role": "future-creative",
+      "state": "REFERENCE_ONLY"
+    }
+  ],
+  "private_content": "OMITTED_FROM_PUBLIC_REPOSITORY",
+  "notes": [
+    "Source commit pins are factual; runtime functionality not independently verified.",
+    "License audit and deployment conditions are not complete."
+  ]
+}
