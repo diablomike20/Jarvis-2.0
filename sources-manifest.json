@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Pinned, PUBLIC source submodule manifests only",
+  "sources": [
+    {
+      "path": "sources/pygpt",
+      "repo": "https://github.com/diablomike20/PyGPT.git",
+      "branch": "master",
+      "sha": "2d8779a983edc73846a640bbbda1dcc7d513d924",
+      "purpose": "Core Python/PySide6 engine",
+      "installed": false
+    },
+    {
+      "path": "sources/pygpt-addons",
+      "repo": "https://github.com/diablomike20/PyGPT_Addons.git",
+      "branch": "master",
+      "sha": "15759ba00cab37622e0b9f5b302c73fc7aa56a50",
+      "purpose": "Curated MCP/Skills/extension catalog",
+      "installed": false
+    },
+    {
+      "path": "sources/jarvis-original",
+      "repo": "https://github.com/diablomike20/Jarvis-Ai.git",
+      "branch": "main",
+      "sha": "e0bd3c5a3a258cc1cf35014ae0a35c7b6b9db87f",
+      "purpose": "Original HUD/Brahma source, P5 target",
+      "installed": false
+    },
+    {
+      "path": "sources/photocraft",
+      "repo": "https://github.com/diablomike20/photocraft.git",
+      "branch": "main",
+      "sha": "b71991e15a3fc01d3c5848464c14c19b6dc8f2b5",
+      "purpose": "P6 creative image editing",
+      "installed": false
+    },
+    {
+      "path": "sources/lightcraft",
+      "repo": "https://github.com/diablomike20/lightcraft.git",
+      "branch": "main",
+      "sha": "7b47ba7894a2563be32ab75176866b6d743df7a4",
+      "purpose": "P6 creative lighting/editing",
+      "installed": false
+    },
+    {
+      "path": "sources/filmcraft",
+      "repo": "https://github.com/diablomike20/filmcraft.git",
+      "branch": "main",
+      "sha": "5231852443363f001c3f6b396dd9b1e6461ae2be",
+      "purpose": "P6 video studio",
+      "installed": false
+    },
+    {
+      "path": "sources/fcc-upstream",
+      "repo": "https://github.com/Alishahryar1/free-claude-code.git",
+      "branch": "main",
+      "sha": "c5239619be489ff393fff29caf838c8a5a957454",
+      "purpose": "P3 PUBLIC FCC upstream reference, not linked to private AI-Proxy",
+      "installed": false
+    }
+  ],
+  "private_sources_excluded": true,
+  "updated_at": "2026-10-16"
+}

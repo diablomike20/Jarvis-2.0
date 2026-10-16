@@ -1,0 +1,28 @@
+[submodule "sources/pygpt"]
+	path = sources/pygpt
+	url = https://github.com/diablomike20/PyGPT.git
+	branch = master
+[submodule "sources/pygpt-addons"]
+	path = sources/pygpt-addons
+	url = https://github.com/diablomike20/PyGPT_Addons.git
+	branch = master
+[submodule "sources/jarvis-original"]
+	path = sources/jarvis-original
+	url = https://github.com/diablomike20/Jarvis-Ai.git
+	branch = main
+[submodule "sources/photocraft"]
+	path = sources/photocraft
+	url = https://github.com/diablomike20/photocraft.git
+	branch = main
+[submodule "sources/lightcraft"]
+	path = sources/lightcraft
+	url = https://github.com/diablomike20/lightcraft.git
+	branch = main
+[submodule "sources/filmcraft"]
+	path = sources/filmcraft
+	url = https://github.com/diablomike20/filmcraft.git
+	branch = main
+[submodule "sources/fcc-upstream"]
+	path = sources/fcc-upstream
+	url = https://github.com/Alishahryar1/free-claude-code.git
+	branch = main
