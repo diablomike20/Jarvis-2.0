@@ -1,0 +1,48 @@
+JARVIS 2.0 documentation ZIP manifest
+Date: 2026-10-16
+ZIP path: artifacts/JARVIS_2_0_PROJECT_ICARUS_TELJES_ATADAS_20261016.zip
+Archive byte size: 331699
+Entries: 40
+Git binary blob: 646174800a8e976fe7e6fe2bb4546f58d2094be9
+Central directory: 328508 / 3169
+
+catalog/acceptance-tests.v1.json	14080 bytes	CRC32 ea5322d9
+catalog/feature-registry.v1.json	80755 bytes	CRC32 142f0084
+catalog/public-source-lock.v1.json	2253 bytes	CRC32 189b9d39
+catalog/research-reference-lock.v1.json	3502 bytes	CRC32 2aafc03a
+docs/00-project-charter.md	3711 bytes	CRC32 38636dbd
+docs/01-source-register.md	5230 bytes	CRC32 e6296f99
+docs/02-architecture.md	5288 bytes	CRC32 fa4a5505
+docs/03-phases-and-gates.md	4621 bytes	CRC32 02a46df9
+docs/04-pygpt-inventory.md	9796 bytes	CRC32 026086a7
+docs/05-addons-inventory.md	5754 bytes	CRC32 429db35e
+docs/06-fcc-inventory.md	4783 bytes	CRC32 c2286085
+docs/07-gui-compatibility.md	2310 bytes	CRC32 ec40c5ef
+docs/08-api-event-contracts.md	5217 bytes	CRC32 335f4464
+docs/09-security-licensing.md	4342 bytes	CRC32 9e088e82
+docs/10-research-backlog.md	5708 bytes	CRC32 69c462c3
+docs/10a-heyputer-everything.md	10101 bytes	CRC32 4dd50e42
+docs/11-agent-handoff.md	4183 bytes	CRC32 72490181
+docs/12-test-matrix.md	6867 bytes	CRC32 61e7a9f9
+docs/13-risks-and-open-questions.md	4243 bytes	CRC32 56a34084
+docs/14-migration-log.md	4569 bytes	CRC32 958a3681
+docs/15-architecture-decisions.md	3953 bytes	CRC32 0702c319
+docs/16-jarvis20-complete-feature-specification.md	25730 bytes	CRC32 f7a76429
+docs/16a-jarvis-original-preservation.md	12425 bytes	CRC32 b4378811
+docs/16b-core-ai-addons-capability-matrix.md	13120 bytes	CRC32 20e87630
+docs/16c-creative-rnd-heyputer-roadmap.md	14816 bytes	CRC32 bd2e0559
+handoff/01-PROJEKT_ALLAPOT_ES_DONTESNAPLO.md	4809 bytes	CRC32 ac6ccd78
+handoff/02_JARVIS_FUNKCIOK_RENDSZERTERKEPE.md	6925 bytes	CRC32 254c0a89
+handoff/03-GODS_EYE_VIEW_TECHNIKAI_AUDIT.md	4719 bytes	CRC32 5619bfa3
+handoff/04-FREE_CLAUDE_AI_SECURITY_VIZSGALAT.md	6093 bytes	CRC32 a72bf407
+handoff/05-AI_MODELL_AZONOSITAS_ES_SZOLGALTATO_POLICY.md	3591 bytes	CRC32 bcf974ef
+handoff/06-OPCIONALIS_TECHNOLOGIAK_ES_KREATIV_RESZLETES.md	5438 bytes	CRC32 438ecd08
+handoff/07-BIZONYITEK_ESETEK_ES_CI.md	4875 bytes	CRC32 036722c5
+handoff/08-CHAT_KONTINUITAS.md	3708 bytes	CRC32 470c1fde
+handoff/09-GITHUB_FORRASKATASZTER.md	3308 bytes	CRC32 88cf4306
+handoff/README.md	2819 bytes	CRC32 2c20ef4e
+JAVASLAT_A_CHATEK_KOZOTTI_FOLYTONOSSAGRA.txt	3637 bytes	CRC32 c055a063
+PROMPT_UJ_CHAT_KOLLEGANAK.txt	7061 bytes	CRC32 d2286220
+README.md	5691 bytes	CRC32 22e37dcf
+UTOLSO_VALASZ_ES_FREE_CLAUDE_AUDIT.txt	3344 bytes	CRC32 03d1e581
+ARCHIVUM_OLVASS_EL.txt	2604 bytes	CRC32 2b3d8540
