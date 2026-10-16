@@ -1,4 +1,4 @@
-# R&D-017 — HeyPuter/everything: 60 webes alkalmazás és JARVIS-integrációs lehetőségek
+# R&D-017 — HeyPuter/everything: 51 forrásbeli alkalmazásmappa és JARVIS-integrációs lehetőségek
 
 **Forrás:** https://github.com/HeyPuter/everything  
 **Rögzített commit:** `06802a1e3749202e4db94d39c9ef5ab1a97d0ef1` (main; lekérdezés: 2026-10-16)  
@@ -6,9 +6,11 @@
 **Kapcsolódó fázis:** P6 (JARVIS-specifikus kreatív / CAD extrák), opcionálisan P2–P4 során csak dokumentált összehasonlítás.  
 **Döntési elv:** az eredeti Project Icarus sorrendjét NEM módosítja.
 
+**Darabszám-pontosítás:** a projekt README-je korábban 60 alkalmazást említett, de a 2026-10-16-i pinelt Git-fában az `src/` alatt 51 közvetlen gyerekkönyvtár ellenőrizhető. Az adatokat nem szabad egymás szinonimájaként kezelni; részletes lista: [16c](16c-creative-rnd-heyputer-roadmap.md).
+
 ## 1. Bizonyított forrásadatok
 
-A fő repository 2026-10-13-án jött létre; a vizsgált Git-fában 32 364 fájl és az `src/` alatt 60 önálló alkalmazáskönyvtár található. A GitHub API ~421 899 KB repository size adatot jelentett (nem egyenlő minden környezetben a checkout méretével). A főgyökér LICENSE **MIT**, de minden alprojekt transzitív dependency licencét és a bundled/remote modellek feltételeit külön kell ellenőrizni. A forrás túlnyomórészt JS/TypeScript + Vite/WebGL/WebAssembly, nem PyGPT-be illeszthető natív Python-plugincsomag.
+A fő repository 2026-10-13-án jött létre; a vizsgált Git-fában 32 364 fájl és az `src/` alatt 51 közvetlen alkalmazáskönyvtár található. A GitHub API ~421 899 KB repository size adatot jelentett (nem egyenlő minden környezetben a checkout méretével). A főgyökér LICENSE **MIT**, de minden alprojekt transzitív dependency licencét és a bundled/remote modellek feltételeit külön kell ellenőrizni. A forrás túlnyomórészt JS/TypeScript + Vite/WebGL/WebAssembly, nem PyGPT-be illeszthető natív Python-plugincsomag.
 
 A README csoportjai: Office, Collaboration, Creative Tools, Engineering, Productivity, Finance, Business, Developer Tools és Games. A teljességi lista a `src/` alatt található: 3d, accounting, api-client, assets, audio-studio, backgammon, building-design, cad, calendar, cap-table, checkers, chess, childcare, circuits, contacts, contracts, crm, documents, email, expense, field-service, fleet, help-desk, hiring, inventory, invoicing, legal, meetings, music-studio, notes, parametric, pdf, photo-studio, pos, presentation, projects, property-management, records, shifts, signatures, solitaire, spreadsheet, sudoku, survey, tasks, teamchat, time-tracking, vector-studio, video-studio, whiteboard, wiki.
 
