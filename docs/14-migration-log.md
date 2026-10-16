@@ -56,3 +56,16 @@ Forrásbeemelés ≠ működő integráció. Dokumentációs commit ≠ végreha
 - Rögzített upstream SHA: `06802a1e3749202e4db94d39c9ef5ab1a97d0ef1`; a 60 app és a 32 364 Git-fájl forrásfában megfigyelt.
 - `docs/10a-heyputer-everything.md` részletes vizsgálat; kutatási backlog és referencia-lock frissítve.
 - Nincs submodule/beépítés a CORE-ba, nincs npm install/build, nincs Puter-login, nincs külső adatküldés.
+
+## 2026-10-16 — Teljes JARVIS 2.0 funkcióspecifikáció
+
+A felhasználó kérésére új, részletes, magyar nyelvű funkcionális célleltár került a külön dokumentációs ágra:
+
+- `docs/16-jarvis20-complete-feature-specification.md` — 16 fejezet és 65 kóddal azonosított célfunkció; a HeyPuter/Everything anyaga elkülönítve.
+- `docs/16a-jarvis-original-preservation.md` — 50 ellenőrzött JARVIS actions/ fájl, funkciómegőrzési követelmények.
+- `docs/16b-core-ai-addons-capability-matrix.md` — 40 PyGPT plugin könyvtár, 16 tool, PyGPT/FCC/Addons tulajdonosi mátrix.
+- `docs/16c-creative-rnd-heyputer-roadmap.md` — 51 tényleges HeyPuter src app, opcionális P6 CAD/creative integráció.
+- `catalog/feature-registry.v1.json` — géppel olvasható 65 feature + 157 forrás-katalógusrekord; minden runtime teszt NOT_RUN.
+- `README.md` és `docs/11-agent-handoff.md` frissítve az új chat/fejlesztői handoffhoz.
+
+A HeyPuter régebbi 60-app állítását külön jelöltük a ténylegesen számolt 51 forráskönyvtártól. Nem történt Windows build, futásidejű integráció, a main ág és az eredeti forrásrepo nem módosult. A privát AI-Proxy, filmes referenciahangok és nyers korábbi beszélgetés-exportok továbbra sincsenek nyilvános GitHubba feltöltve.
