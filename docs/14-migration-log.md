@@ -69,3 +69,8 @@ A felhasználó kérésére új, részletes, magyar nyelvű funkcionális célle
 - `README.md` és `docs/11-agent-handoff.md` frissítve az új chat/fejlesztői handoffhoz.
 
 A HeyPuter régebbi 60-app állítását külön jelöltük a ténylegesen számolt 51 forráskönyvtártól. Nem történt Windows build, futásidejű integráció, a main ág és az eredeti forrásrepo nem módosult. A privát AI-Proxy, filmes referenciahangok és nyers korábbi beszélgetés-exportok továbbra sincsenek nyilvános GitHubba feltöltve.
+
+
+## 2026-10-16 — God's Eye View és teljes funkciótérkép kiegészítése
+
+Külön munkaág az aktuális dokumentációs masterből: `docs/gods-eye-view-feature-expansion-20261016` (parent: 935016895c814131e42022e021a034638d3fd603). A forrásaudit pontos Git commitja `e2274bbf0ceaeb2e14f8a59d63e77000553c6816`. Új dokumentumok: `docs/17-gods-eye-view-geospatial-audit.md`, `docs/18-e2e-functional-atlas.md` (34 végponttól végpontig eset), `docs/19-provider-catalog-and-auth-research.md`, `catalog/gods-eye-view.capability-registry.v1.json` (23 réteg, 40 tool, 30 NOT_RUN teszt). Az eredeti core és docs ágak nem sérültek; a kód nem épült be és Windows/browser futásidejű teszt nem történt.

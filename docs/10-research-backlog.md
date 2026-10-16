@@ -68,3 +68,9 @@ VoiceStudio: WER/STT, természetesség, latency p50/p95, VRAM, magyar kiejtés.
 IronRAG: Recall@K, citation correctness, chunk relevancia, RAM/CPU, import/restart.
 DeerFlow: többlépéses feladatteljesítés PyGPT Agents V2-vel szemben, ütközésmentesen.
 Barehands: gesture precision, false positives, CPU/GPU, Windows kamera permission.
+
+
+## 2026-10-16 — Kiegészítés: God's Eye View / no-cost-ai
+
+- **God's Eye View:** `HIGH_VALUE_CANDIDATE / P6_OPTIONAL / PARKED`, MIT kód és harmadik fél adatai különlicencesek; Cesium 3D, 23 README-layer/map-source sor, 40 MCP eszköz, Voice/Scene Director, opcionális JARVIS GeoSpatial Console. Teljes forrásaudit: [17](17-gods-eye-view-geospatial-audit.md). Az eredeti JARVIS HoloGlobe nem cserélendő le; éles aktiválás csak új, explicit tulajdonosi döntéssel.
+- **zebbern/no-cost-ai:** `RESEARCH_REFERENCE` — szolgáltatólink-gyűjtemény, nem API gateway; free/unlimited adatokat újra kell ellenőrizni; [19](19-provider-catalog-and-auth-research.md).

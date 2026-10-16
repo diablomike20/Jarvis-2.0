@@ -1,0 +1,822 @@
+{
+  "schema_version": "1.0.0",
+  "name": "Jarvis-2.0 optional Gods Eye View",
+  "source_repository": "diablomike20/gods-eye-view",
+  "source_commit": "e2274bbf0ceaeb2e14f8a59d63e77000553c6816",
+  "upstream": "bilawalsidhu/gods-eye-view",
+  "code_license": "MIT",
+  "third_party_data_license": "SOURCE_SPECIFIC",
+  "version": "0.2.1",
+  "entry_status": "HIGH_VALUE_CANDIDATE / PARKED_RND",
+  "phase": "P6_OPTIONAL",
+  "activation_gate": "STARK_INDUSTRIES_EXPLICIT_OWNER_APPROVAL",
+  "installed": false,
+  "runtime_tested": false,
+  "origin_claim": "README mentions 20 layers and map sources; table has 23 rows",
+  "layer_count": 23,
+  "mcp_tool_count": 40,
+  "layers": [
+    {
+      "id": "GEV-L01",
+      "name": "🗺️ Map Stack",
+      "source_description": "Esri satellite imagery, Google Photorealistic 3D, OSM, plus additional ion-hosted stacks",
+      "source_provider": "Esri / Google / Ion / OSM",
+      "credential_requirements": "🟢 Esri satellite + OSM · 🟡 ion-hosted Google 3D + world terrain · 🔴 direct Google + place search",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L02",
+      "name": "✈️ Live Flights",
+      "source_description": "11,000+ live aircraft + route history",
+      "source_provider": "OpenSky + adsb.lol",
+      "credential_requirements": "🟢 (🟡 optional for more polling credits)",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L03",
+      "name": "🎖️ Military Flights",
+      "source_description": "ADS-B military traffic in amber, emergency broadcasts in red",
+      "source_provider": "adsb.lol",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L04",
+      "name": "📡 GNSS Integrity",
+      "source_description": "Regional navigation accuracy scores; anomalies do not confirm interference",
+      "source_provider": "adsb.lol, GPSJAM aggregation",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L05",
+      "name": "🔥 Fire Perimeters",
+      "source_description": "Incident boundaries and reported containment",
+      "source_provider": "WFIGS / NIFC",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L06",
+      "name": "🚢 Live Vessels",
+      "source_description": "Thousands of ships worldwide",
+      "source_provider": "AISStream",
+      "credential_requirements": "🟡",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L07",
+      "name": "🛰️ Satellites",
+      "source_description": "838-object catalog, color-coded by class with a live legend — the **DENSE** chip drops in the whole Starlink shell",
+      "source_provider": "CelesTrak",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L08",
+      "name": "🌍 Earthquakes",
+      "source_description": "Global seismic activity, last 24h",
+      "source_provider": "USGS",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L09",
+      "name": "◍ Air quality",
+      "source_description": "Live AQHI on the published 1–10+ health-risk scale, with a Weather-panel card showing the band legend and the highest readings in view. **Canada only** — ECCC is the first registered provider",
+      "source_provider": "ECCC MSC GeoMet",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L10",
+      "name": "🚗 Traffic",
+      "source_description": "Simulated vehicles on OSM roads. With TomTom, live flow speeds drive the simulation and congestion colors below ~8 km; individual vehicle positions are not live observations",
+      "source_provider": "TomTom + OSM",
+      "credential_requirements": "🟢 simulation · 🟡 live flow speeds",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L11",
+      "name": "📹 CCTV Mesh",
+      "source_description": "~4,000 public cameras (shared cap) projected _into_ the 3D space — Austin · Texas (TxDOT) · California (Caltrans) · London (TfL) · Ontario (511) · Finland (Fintraffic) · British Columbia (DriveBC) · Estonia (Tallinn, Tarktee) · Delaware (DelDOT live video) · New South Wales (Live Traffic NSW) · Calgary · Norway (Statens vegvesen) · Toronto · King County (WA) · Washington (WSDOT) · Catalonia (Servei Català de Trànsit), plus opt-in New York City (NYC DOT TMC, needs your own NYC DOT agreement) and opt-in Lithuania (Via Lietuva / Eismoinfo, photo licence unconfirmed). Positions are published; poses are estimated priors **you calibrate by dragging a gizmo on the camera itself**",
+      "source_provider": "City APIs",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L12",
+      "name": "📷 Mapped ALPR Cameras",
+      "source_description": "License-plate-reader camera locations tagged by OpenStreetMap contributors, loaded one city-sized view at a time, with **SHOW NEAREST**. Locations and tags only: no plate data, no video",
+      "source_provider": "OpenStreetMap (incl. DeFlock mapping)",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L13",
+      "name": "📷 Street Level",
+      "source_description": "Street-level photos behind one panel, one chip per provider: coverage on the streets, image cones, an embedded viewer and **FOLLOW**. Mapillary, Google Street View, KartaView and Panoramax",
+      "source_provider": "Mapillary · Google · KartaView · Panoramax",
+      "credential_requirements": "🟢 KartaView, Panoramax · 🟡 Mapillary token · 🔴 Google Maps key",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L14",
+      "name": "📻 Radio",
+      "source_description": "Geolocated world radio with an **analog tuner** — drag the needle across up to 750 stations and the globe flies to each broadcaster",
+      "source_provider": "Radio Browser / broadcasters",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L15",
+      "name": "🚌 Transit",
+      "source_description": "Live buses, trams, metros, trains and ferries with delayed playback between reports, selected-vehicle trails, and mode-coloured DETECT labels — Boston, Austin, Minneapolis, Helsinki, the Netherlands, Norway, South East Queensland, and nine in Ontario: Toronto (surface vehicles; the subway publishes no positions), Mississauga, Hamilton, Durham Region, York Region, Guelph, Burlington, Barrie and Kingston",
+      "source_provider": "Operator GTFS-Realtime feeds",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L16",
+      "name": "🚲 Bikeshare",
+      "source_description": "Live station availability",
+      "source_provider": "GBFS",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L17",
+      "name": "🧭 Directions",
+      "source_description": "Click A and B on the globe for a street-following drive, walk or cycle route draped on the terrain with turn-by-turn steps — then FLY the camera along it. No key, no geocoder, no mic",
+      "source_provider": "OSRM on FOSSGIS servers (OpenStreetMap)",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L18",
+      "name": "🔥 Active Fires",
+      "source_description": "Live NASA FIRMS detections, trailing 24h",
+      "source_provider": "NASA FIRMS",
+      "credential_requirements": "🟡",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L19",
+      "name": "🚀 Space Missions",
+      "source_description": "Rolling 30-day launches with payload, stage, and recovery detail",
+      "source_provider": "Launch Library 2",
+      "credential_requirements": "🟢 (🟡 optional token raises the allowance)",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L20",
+      "name": "🎖️ Mapped Installations",
+      "source_description": "Viewport-bounded military-site context from community mapping — incomplete by nature, and labeled that way",
+      "source_provider": "OpenStreetMap",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L21",
+      "name": "🌬️ Wind",
+      "source_description": "Animated 10 m forecast wind with an optional speed, temperature or pressure color field and a reading at map center",
+      "source_provider": "NOAA GFS / ECMWF IFS",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L22",
+      "name": "🌦️ Observed Weather",
+      "source_description": "Rain radar (contiguous US), Satellite clouds (GOES regional or global infrared, Clouds only or Full image) and Lightning density (Americas and Pacific) on one history timeline",
+      "source_provider": "NOAA nowCOAST",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    },
+    {
+      "id": "GEV-L23",
+      "name": "🌀 Cyclones",
+      "source_description": "Advisory positions, forecast tracks and uncertainty cones for the Atlantic and eastern/central North Pacific",
+      "source_provider": "NOAA NHC / CPHC",
+      "credential_requirements": "🟢",
+      "source": "README.md",
+      "runtime_test": "NOT_RUN",
+      "integration_state": "P6_OPTIONAL_PARKED",
+      "enabled": false
+    }
+  ],
+  "mcp_tools": [
+    {
+      "id": "GEV-T01",
+      "name": "get_earthquakes",
+      "data_source": "`earthquakes`",
+      "description": "USGS M2.5+ events in the last 24 hours, strongest first",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T02",
+      "name": "get_active_fires",
+      "data_source": "`fires`",
+      "description": "NASA FIRMS detections in an area, highest radiative power first",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T03",
+      "name": "get_recent_launches",
+      "data_source": "`launches`",
+      "description": "Launch Library 2 launches in the last 30 days, newest first",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T04",
+      "name": "aircraft_in_area",
+      "data_source": "`aircraft`",
+      "description": "Aircraft in an area, nearest first; `military: true` reads the `military` feed",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T05",
+      "name": "find_aircraft",
+      "data_source": "`aircraft`",
+      "description": "Aircraft anywhere by callsign, ICAO address or registration",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "EXPLICIT_USER_APPROVAL"
+    },
+    {
+      "id": "GEV-T06",
+      "name": "get_aircraft_track",
+      "data_source": "`aircraft`",
+      "description": "Recent positions of one aircraft, thinned to 200 points",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "EXPLICIT_USER_APPROVAL"
+    },
+    {
+      "id": "GEV-T07",
+      "name": "get_aircraft_info",
+      "data_source": "`aircraft`",
+      "description": "Aircraft type and registration, and flight route, from adsbdb",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T08",
+      "name": "vessels_in_area",
+      "data_source": "`vessels`",
+      "description": "Ships reported by AIS in an area, nearest first, optionally by type",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T09",
+      "name": "find_vessel",
+      "data_source": "`vessels`",
+      "description": "Ships anywhere by MMSI, IMO number or name",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "EXPLICIT_USER_APPROVAL"
+    },
+    {
+      "id": "GEV-T10",
+      "name": "get_vessel_track",
+      "data_source": "`vessels`",
+      "description": "Recent positions of one ship, thinned to 200 points",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "EXPLICIT_USER_APPROVAL"
+    },
+    {
+      "id": "GEV-T11",
+      "name": "next_satellite_pass",
+      "data_source": "`satellites`",
+      "description": "Next pass over a place or point (default the ISS), with naked-eye visibility",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T12",
+      "name": "satellites_overhead",
+      "data_source": "`satellites`",
+      "description": "Satellites in a CelesTrak group above a place or point now, highest first",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T13",
+      "name": "find_cctv_cameras",
+      "data_source": "`cctv`",
+      "description": "Public cameras in an area, nearest first",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "EXPLICIT_USER_APPROVAL"
+    },
+    {
+      "id": "GEV-T14",
+      "name": "get_cctv_snapshot",
+      "data_source": "`cctv`",
+      "description": "The current image from one camera, returned as image content",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "EXPLICIT_USER_APPROVAL"
+    },
+    {
+      "id": "GEV-T15",
+      "name": "find_alpr_cameras",
+      "data_source": "`alpr`",
+      "description": "OpenStreetMap-mapped license plate readers in a US/Canadian area up to 3°",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "EXPLICIT_USER_APPROVAL"
+    },
+    {
+      "id": "GEV-T16",
+      "name": "find_radio_stations",
+      "data_source": "`radio`",
+      "description": "Radio Browser stations by area and/or search terms, with stream URLs",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T17",
+      "name": "search_places",
+      "data_source": "`placeSearch`",
+      "description": "Points of interest matching a query within an area (Google Places)",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T18",
+      "name": "places_nearby",
+      "data_source": "`placeSearch`",
+      "description": "Notable places around a place or point (Google Places)",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T19",
+      "name": "plan_route",
+      "data_source": "`routing`",
+      "description": "Walking, driving or cycling route over OpenStreetMap, with a simplified path",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T20",
+      "name": "get_bike_share",
+      "data_source": "`bikeshare`",
+      "description": "Live GBFS stations in an area, with bikes and docks available",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T21",
+      "name": "get_transit_vehicles",
+      "data_source": "`transit`",
+      "description": "Live GTFS-Realtime vehicle positions in an area, optionally one route",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T22",
+      "name": "get_traffic_flow",
+      "data_source": "`traffic`",
+      "description": "TomTom flow in a city-sized area: speed vs free flow, congested and closed road",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T23",
+      "name": "get_weather",
+      "data_source": "`weather`",
+      "description": "Current conditions at a place or point",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T24",
+      "name": "get_weather_map",
+      "data_source": "`weatherMaps`",
+      "description": "The latest NOAA radar, satellite or lightning map image over an area",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T25",
+      "name": "get_wind",
+      "data_source": "`wind`",
+      "description": "GFS or IFS model wind 10 m above ground at a location",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T26",
+      "name": "get_recent_imagery",
+      "data_source": "`imagery`",
+      "description": "The most recent clear Landsat/Sentinel-2 image of an area (VIIRS fallback)",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T27",
+      "name": "find_submarine_cables",
+      "data_source": "`cables`",
+      "description": "TeleGeography cables and landing points by area or name (CC BY-NC-SA 3.0)",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T28",
+      "name": "find_infrastructure",
+      "data_source": "`infrastructure`",
+      "description": "OpenStreetMap datacenters or dams in an area, nearest first (ODbL)",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T29",
+      "name": "get_bhote_koshi_flood",
+      "data_source": "`events`",
+      "description": "The 2026 Bhote Koshi flood: evidence trail in story order, flood path and imagery dates (CC BY-NC 4.0)",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T30",
+      "name": "get_regional_brief",
+      "data_source": "`regional`",
+      "description": "What and where a location is, its weather and recent headlines",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T31",
+      "name": "get_cyclones",
+      "data_source": "`cyclones`",
+      "description": "Active NHC/CPHC tropical cyclones, optionally in an area",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T32",
+      "name": "get_fire_perimeters",
+      "data_source": "`perimeters`",
+      "description": "Mapped WFIGS wildfire perimeters in an area, largest first",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T33",
+      "name": "get_terrain_height",
+      "data_source": "`terrain`",
+      "description": "Ground, geoid and ellipsoid heights at up to 20 points",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T34",
+      "name": "find_military_installations",
+      "data_source": "`installations`",
+      "description": "OpenStreetMap military sites in an area of at most 10° per side",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "EXPLICIT_USER_APPROVAL"
+    },
+    {
+      "id": "GEV-T35",
+      "name": "get_map_features",
+      "data_source": "`features`",
+      "description": "Administrative areas, named places or monuments at a location (needs Overpass)",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T36",
+      "name": "situation_brief",
+      "data_source": "`weather`",
+      "description": "Weather, earthquakes, fires, aircraft, ships and cyclones for an area, by section",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T37",
+      "name": "military_awareness",
+      "data_source": "`military`",
+      "description": "Military and other aircraft, ships and military installations within 250 km of a point, by section",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "EXPLICIT_USER_APPROVAL"
+    },
+    {
+      "id": "GEV-T38",
+      "name": "get_hud_caption",
+      "data_source": "`weather`, `summary`",
+      "description": "The app's heads-up display caption for an area",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T39",
+      "name": "show_in_gods_eye_view",
+      "data_source": "`app`",
+      "description": "A view in God's Eye View: the live panel in clients with MCP Apps, and a link everywhere; takes another answer's view or an area or camera, layers, style, map, marks and something to follow",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    },
+    {
+      "id": "GEV-T40",
+      "name": "panel_request",
+      "data_source": "`app`",
+      "description": "Panel only: loads a path from the app's server for the God's Eye View panel",
+      "source": "docs/TOOLS.md",
+      "runtime_test": "NOT_RUN",
+      "enabled": false,
+      "access_policy": "READ_ONLY_ALLOWLIST"
+    }
+  ],
+  "extra_capabilities": [
+    "3D Cesium globe",
+    "cockpit follow",
+    "sensor-themed shader styles",
+    "CCTV visualization",
+    "geospatial annotations",
+    "shared view URL",
+    "Scene Director v5 import/export",
+    "OpenAI Realtime voice controls",
+    "QWebEngine-compatible embed proposal",
+    "MCP Apps panel",
+    "local ADS-B WebUSB",
+    "satellite pass simulation"
+  ],
+  "test_ids": [
+    {
+      "id": "GEO-001",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-002",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-003",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-004",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-005",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-006",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-007",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-008",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-009",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-010",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-011",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-012",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-013",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-014",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-015",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-016",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-017",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-018",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-019",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-020",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-021",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-022",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-023",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-024",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-025",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-026",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-027",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-028",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-029",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "GEO-030",
+      "status": "NOT_RUN"
+    }
+  ],
+  "never_auto_enable": [
+    "person tracking",
+    "facial recognition",
+    "non-public camera access",
+    "unrestricted military_awareness",
+    "non-reviewed writes"
+  ],
+  "references": [
+    "docs/17-gods-eye-view-geospatial-audit.md",
+    "docs/16-jarvis20-complete-feature-specification.md"
+  ]
+}
