@@ -1,0 +1,62 @@
+JARVIS 2.0 — TARTÓS SZERVEZETI EMLÉKEZET, ÁTADÁSI RENDSZER
+Dátum: 2026-10-16
+
+A PROBLÉMA
+Nagy, hónapokon át zajló munkákban az asszisztens-chat kontextusablaka elfogy. Ha egy új chat kizárólag korábbi válaszokra vagy rövid összefoglalóra támaszkodik, elvesznek az eredeti megállapodások, forrásazonosítók, gondosan lehatárolt felelősségek és a valós tesztállapot. A teljes nyers chat publikálása viszont adatvédelmi kockázat.
+
+A JAVASOLT MEGOLDÁS: PROJECT MEMORY-AS-CODE
+1. Git docs ág „elfogadott terv”: a docs/00–16c és handoff/ minden részletes dokumentum.
+2. Source lock: pontos SHA és license a submodule-hoz; semmilyen main/master automatikus upgrade.
+3. Feature registry: minden képesség stabil ID-val, a forrásfájl/method, owner, fázis, GUI elérhetőség, feature gap.
+4. Decision ledger ADR: mikor/ki/miért döntött, alternatívák, hatás a regressziókra; ne csak a chatben legyen.
+5. Machine-readable Task Registry / state capsule: jelenleg folyamatosan frissített, ellenőrizhető állapot.
+6. Evidence registry: teszt ID, futtatott parancs, exit code, OS/env, artifact/hash/log, verified by.
+7. New Chat Boot Prompt: kötelező tanulási sorrend és handoff teszt.
+8. R&D backlog: az új GitHub ötletek ide kerülnek és nem írják át a P0–P6 sorrendet.
+9. Privacy: teljes korábbi chat csak külön privát archívum, a publikus Gitben tisztított műszaki kivonat.
+
+KÖTELEZŐ KILÉPÉSI FOLYAMAT EGY CHAT VÉGÉN
+- „Mit döntöttünk?” (exact ADR és constraints)
+- „Melyik branch/commit/PR/CI tart?” (source provenance)
+- „Mi kész ténylegesen?” (tesztelt és artifact link)
+- „Mi csak tervezett?” (NOT_RUN)
+- „Mi sérülékeny és tiltott?” (risks, privacy)
+- „Mi legyen a következő legkisebb feladat?” (owner, input, output, acceptance)
+- Ezt csatold a Git doc branchhez és a ZIP buildhez. Az új chat CSAK ezek után módosít.
+
+KÖTELEZŐ BELÉPÉSI FOLYAMAT ÚJ CHAT ELEJÉN
+- Első 20–30 perc forrástanulmányozás, de nem mechanikus gyors átfutás; mélysége szükség szerint.
+- Ellenőrizd a Git HEAD-et, a dokumentumok verzióját és a párhuzamos brancheket.
+- Ellenőrizd az előző task félbemaradt jóváhagyását és az általa írt fájlokat.
+- Járj utána az aktuális feladatnak a source code-on keresztül, ne implementálj README állításra.
+- Jelents világosan olvasott, hiányzó, blokkoló és fejlesztésre alkalmas információkat.
+- Csak utána első commit a külön munkabranchben.
+
+ÁGAK ÉS MUNKACSOMAGOK
+main = releases / accepted baseline;
+docs/master-spec = terv és elfogadott állítások;
+docs/final-handoff = chatátadás és ZIP;
+integration/pygpt-addons-baseline = P2 forrásállapot;
+sources/pinned-project-baseline = teljes nyilvános source reference;
+feature/<owner>/<task> = izolált implementáció;
+review/<scope> = független összehasonlítás (read-only);
+No force push, destructive reset, protected branches.
+
+MINTA STATE CAPSULE:
+{
+  "project": "Jarvis-2.0",
+  "phase": "P2",
+  "status": "NOT_RUN",
+  "owner": "agent-team-alpha",
+  "branch": "feature/p2/first-pygpt-smoke",
+  "base_sha": "SHA",
+  "head_sha": "SHA",
+  "acceptance_ids": ["PY-001", "PY-002"],
+  "evidence": [],
+  "blockers": ["hardware", "credential"],
+  "next_step": "Run smoke on clean Windows",
+  "user_approval_needed": false
+}
+
+FONTOS
+Egyes komponensek (PyGPT/MemoryVault/IronRAG) önálló runtime memóriával rendelkezhetnek. Ezek nem helyettesítik a projekt fejlesztési/történeti memóriáját, és nem szabad egy feladatban három ütköző writable source-of-truth rendszerre építeni.

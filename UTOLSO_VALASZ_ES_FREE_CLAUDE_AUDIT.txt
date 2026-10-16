@@ -1,0 +1,38 @@
+UTOLSÓ ELŐZŐ VÁLASZ + A MEGSZAKADT FREE-CLAUDE-AI VIZSGÁLAT BEFEJEZÉSE
+Dátum: 2026-10-16
+
+A KORÁBBI CHATBEN UTOLJÁRA ELHANGZOTT, BIZTONSÁGI VIZSGÁLATOT BEHARANGOZÓ ASSZISZTENS-MEGJEGYZÉS:
+„Ezt most biztonsági vizsgálatként kezelem, mert ha a bejelentkezésnél valami idegen oldalra, OAuth-engedélykérésre vagy tokenbekérésre visz, azt nem szabad félvállról venni. Átnézem a Free-Claude-AI belépési folyamatát, a hivatkozott domaineket és az eredeti forrását. Addig ne adj meg benne újra jelszót vagy API-kulcsot, és ne futtasd a telepítőjét rendszergazdaként.”
+
+EZ A KORÁBBI MEGJEGYZÉS NEM VOLT A VIZSGÁLAT VÉGLEGES EREDMÉNYE. A KÖVETKEZŐ ANNAK A KÓDVIZSGÁLATNAK A BEFEJEZETT, HITELYES ÖSSZEFOGLALÓJA.
+
+Az audit során a PRIVÁT diablomike20/Free-Claude-AI repository (README.md, unlimited claude/Claude.html, run_server.bat) fájljait ellenőriztük. Az HTML a https://js.puter.com/v2/ SDK scriptet tölti be, és puter.ai.chat() hívásokat használ. Nem találtunk explicit külső jelszót bekérő fetch/post mechanizmust a vizsgált kliensben, ezért adathalászat nem bizonyított; az élő böngésző/hálózat forgalma azonban nem lett ellenőrizve, ezért teljes biztonság sem bizonyított.
+
+TÉNYLEGES HIBÁK
+1. A HTML-ben a file:// módot „tökéletesnek” állítják, miközben a Puter hivatalos dokumentáció unsupported_origin miatt nem támogatja.
+2. A manuális auth gomb puter.auth.signIn() HELYETT puter.ai.chat('test',{model:'claude-sonnet-4'}) kérést indít.
+3. A három modell ID be van égetve, nincs automatikus modelllista és account capability ellenőrzés.
+4. A hibajelentés túl általános és a felhasználó cookie/extenzió-beállításait okolja.
+5. A .bat `python -m http.server 8000` parancsa nem szűkíti 127.0.0.1-re a bindot.
+6. A HTML artifact preview nem megbízható modellkódot sandbox nélküli blob HTML ablakban nyitja.
+7. README félreérthető 100% free állítás: Puter User-Pays allowance és esetleges fizetés.
+8. LocalStorage persistent history a kódrészletek alapján nem bizonyított.
+
+HIVATALOS FORRÁSOK
+https://docs.puter.com/Auth/signIn/
+https://docs.puter.com/supported-platforms/
+https://docs.puter.com/user-pays-model/
+https://docs.puter.com/rate-limits-and-quotas/
+
+HA MÉG EGYSZER HASZNÁLNÁD
+- Csak Puter hivatalos domainen hitelesíts, popup pontos domain.
+- A HTML lokális HTTP serverről fusson, ne file://: `python -m http.server 8000 --bind 127.0.0.1`.
+- Az alkalmazás auth funkcióját előbb javítsuk: `puter.auth.signIn()`, `isSignedIn()`, `getUser()`.
+- Előbb listModels/capability/allowance check, csak utána Claude próbahívás.
+- Ha ismeretlen domainen jelszót adtál meg, változtasd meg a megfelelő fiók jelszavát és léptesd ki az aktív sessionöket.
+- API token/cookie/chat exportot nem tehetünk a nyilvános Jarvis-2.0 repóba.
+
+VÉLEMÉNY A JARVIS PROJEKTRŐL
+Ez a kliens nem illeszkedik az AI_proxy_2 core motor szerepébe: egy browser Puter.js wrapper. A UI artifact funkciói ötleteket adhatnak, de P3 FCC gateway és policy nélkül nem kapja meg a fejlesztő agent, tool/harness, stream-protokoll és jogosultsági képességeket. Nem telepítettük és nem tettük központi autentikációs eszközzé.
+
+RÉSZLETES AUDIT: handoff/04-FREE_CLAUDE_AI_SECURITY_VIZSGALAT.md
