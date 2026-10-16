@@ -69,3 +69,7 @@ A felhasználó kérésére új, részletes, magyar nyelvű funkcionális célle
 - `README.md` és `docs/11-agent-handoff.md` frissítve az új chat/fejlesztői handoffhoz.
 
 A HeyPuter régebbi 60-app állítását külön jelöltük a ténylegesen számolt 51 forráskönyvtártól. Nem történt Windows build, futásidejű integráció, a main ág és az eredeti forrásrepo nem módosult. A privát AI-Proxy, filmes referenciahangok és nyers korábbi beszélgetés-exportok továbbra sincsenek nyilvános GitHubba feltöltve.
+
+## 2026-10-16 — v1.1 scope-korrekció
+
+A teljes funkcióspecifikáció és a gépi célfunkció-regiszter egy, a Project Icarushoz nem tartozó személyes témára felvett kutatási tétellel rövidebb lett. Az aktuális célfunkciók száma: **64** (a korábbi v1.0-ban 65 volt). A 157 forrásleltár-rekord és az eredeti PyGPT/FCC/P6 célok változatlanok. Az archivált átadási szöveg is kizárólag projekt-releváns tartalmat őriz. A teljes integrált JARVIS runtime továbbra sem készült el.

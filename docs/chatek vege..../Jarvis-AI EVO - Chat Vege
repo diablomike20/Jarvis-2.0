@@ -66,7 +66,7 @@ Végső GitHub-ellenőrzés sikeres
 
 A dokumentációs ág aktuális commitja: [fbd27ac](https://github.com/diablomike20/Jarvis-2.0/commit/fbd27ac251c86733e087de3e2a17bf01cfe774fc?utm_source=chatgpt.com). Az új fájlokat visszaellenőriztem, a `main` változatlan.
 
-Fontos: a dokumentáció elkészült, nem a teljes JARVIS-integráció. A Free-Claude-AI bejelentkezési biztonsági vizsgálata továbbra sem lezárt; ha gyanús felületen adtál meg jelszót vagy tokent, azt érdemes visszavonni, illetve megváltoztatni.
+Fontos: a dokumentáció elkészült, nem a teljes JARVIS-integráció.
 
 A projekt most már rendelkezik egy olyan részletes, verziózott funkciótérképpel, amelyre a következő fejlesztési fázisok és az új AI-kolléga munkája építhető.
 

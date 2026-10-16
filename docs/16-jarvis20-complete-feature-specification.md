@@ -1,7 +1,7 @@
 # JARVIS 2.0 — TELJES FUNKCIONÁLIS CÉLSPECIFIKÁCIÓ (MASTER)
 
 **Project Icarus / JARVIS UNIFIED**  
-**Specifikáció:** JARVIS-FS-2026-10-16 / v1.0  
+**Specifikáció:** JARVIS-FS-2026-10-16 / v1.1  
 **Nyelv:** magyar  
 **Forrás:** a felhasználó által rögzített célok, a Jarvis-2.0 dokumentációs ág, valamint forráskódban ellenőrzött JARVIS/Brahma, PyGPT, PyGPT_Addons, Free Claude Code, PhotoCraft, LightCraft, FilmCraft és HeyPuter/Everything.  
 **Futásidejű állapot:** nincs kész integrált JARVIS 2.0 build; ez a teljes *tervezett* és *megőrizendő* funkciófelület leírása.  
@@ -166,7 +166,6 @@ A 61 FCC providerbejegyzés nem 61 élő ingyenes modell; 30 MCP bejegyzés nem 
 
 **LAB-004 — VoiceStudio/IronRAG/Memory Vault/Barehands:** P6 jelöltek, nem automatikus buildkövetelmény; beszéd API, strukturált tudásgráf, Markdown személyes jegyzettár, kamera+gesztusvezérelt 3D HUD. Részletes állapot a [10](10-research-backlog.md) dokumentumban.
 
-**LAB-005 — Free-Claude-AI / no-cost-ai:** a felhasználó másik Free-Claude-AI forrása Puter.js bejelentkezésre épülő böngészős Claude front-end, NEM azonos a Free Claude Code gatewayjel. A bejelentkezési kockázat vizsgálata lezáratlan; nem hitelesítjük automatikusan vagy kapcsoljuk P3-ra. A zebbern/no-cost-ai szolgáltatáslink-lista, nem hitelesített modellgateway. Külön login/security audit kell.
 
 ## 12. Mitől lesz egységes és nem három külön program?
 

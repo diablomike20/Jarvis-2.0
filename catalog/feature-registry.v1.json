@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project": "Jarvis-2.0 / Project Icarus",
   "generated_on": "2026-10-16",
   "registry_type": "PROPOSED_TARGETS_AND_SOURCE_INVENTORIES_NOT_IMPLEMENTATION_EVIDENCE",
@@ -529,15 +529,6 @@
     {
       "id": "LAB-004",
       "title": "VoiceStudio/IronRAG/Memory Vault/Barehands",
-      "phase": "R&D",
-      "priority": "PLANNED_OR_PARKED",
-      "implemented_in_unified": false,
-      "runtime_test": "NOT_RUN",
-      "evidence_path": "docs/16-jarvis20-complete-feature-specification.md"
-    },
-    {
-      "id": "LAB-005",
-      "title": "Free-Claude-AI / no-cost-ai",
       "phase": "R&D",
       "priority": "PLANNED_OR_PARKED",
       "implemented_in_unified": false,
@@ -2371,7 +2362,7 @@
     }
   ],
   "counts": {
-    "master_function_targets": 65,
+    "master_function_targets": 64,
     "original_action_modules": 50,
     "pygpt_plugin_directories": 40,
     "pygpt_app_tools": 16,
@@ -2389,7 +2380,6 @@
   "notes": [
     "The master target list includes optional/parked items; see priority fields.",
     "No feature is automatically marked implemented by a documentation commit.",
-    "HeyPuter README previously advertised 60 apps; source top-level src dirs counted 51; file blobs 32364.",
-    "Free Claude AI browser front-end is not the Free Claude Code provider gateway."
+    "HeyPuter README previously advertised 60 apps; source top-level src dirs counted 51; file blobs 32364."
   ]
 }
