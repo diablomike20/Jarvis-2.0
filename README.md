@@ -25,6 +25,7 @@
 
 ## Forráskód beköltözése
 
+- [sources/pinned-project-baseline](https://github.com/diablomike20/Jarvis-2.0/tree/sources/pinned-project-baseline): 7 rögzített publikus forrás (eredeti JARVIS, PyGPT, Add-ons, PhotoCraft, LightCraft, FilmCraft, FCC upstream).
 - [integration/pygpt-addons-baseline](https://github.com/diablomike20/Jarvis-2.0/tree/integration/pygpt-addons-baseline): PyGPT és PyGPT_Addons Git submodule-ok, konkrét SHA-kra pinelve.
 - A Free Claude Code integrációja későbbi külön P3 munkacsomag; a meglévő privát kódot nem publikáljuk engedély és tartalmi ellenőrzés nélkül.
 - A JARVIS eredeti HUD-ja egyelőre változatlanul a forrásrepojában található.

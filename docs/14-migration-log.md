@@ -27,7 +27,7 @@ Git Gitlink-objektumokat hoztunk létre; a submodule külső forrás pontos HEAD
 - 56937ac6d114c0207ccc9cb1280c3789fa07e5cf — README, charter, forrás-pin, architektúra, fázisok.
 - 85d6a1796299244095d6be45a22391108361e8a6 — PyGPT, Add-ons, FCC, GUI leltár.
 - 6b468a53a26717aea47787f7d3ff4e93b455d59e — IPC, security, kutatási backlog, handoff.
-- A következő commitban további tesztek, rizikó, ADR, napló és gépi katalógus.
+- 4df078ed320351beb18d0b98dcbab4c602723f4f — 74 tervezett acceptance teszt, 22 kockázati tétel, ADR, napló, gépi JSON nyilvántartások.
 
 ## Ami NEM történt meg
 
@@ -42,3 +42,10 @@ Git Gitlink-objektumokat hoztunk létre; a submodule külső forrás pontos HEAD
 ## Jelentési elv
 
 Forrásbeemelés ≠ működő integráció. Dokumentációs commit ≠ végrehajtott teszt. User által jóváhagyandó nyitott feladatok külön backlog és fáziskapu szerint.
+
+## Forrásgyűjtemény ág
+
+- sources/pinned-project-baseline ágat a változatlan main bázisból hoztuk létre.
+- Commit 1da31bdd7850665d963906dfc8a4d97b2788e94d: .gitmodules, README.md, sources-manifest.json és 7 public Git submodule.
+- Minden submodule pontosan a 01-source-register.md táblázat commitjára mutat; az eltérő jogi/telepítési feltételek miatt nem történt automatikus build.
+- A GitHub faobjektumok sikeresen létrejöttek. Rekurzív klónozás tesztje továbbra is NOT_RUN.

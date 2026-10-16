@@ -80,3 +80,10 @@ Ezek a rekordok elválasztják a **felhasználó által kért stratégiai dönt�
 ## ADR dokumentálásának szabálya
 
 Státuszváltás csak dátummal, indoklással, érintett fájl/commit/teszt hivatkozással; a USER döntést külön jelölni kell a mérnöki feltételezéstől. Dokumentáció frissítése nem helyettesíti a kódváltoztatást.
+
+## ADR-013 — Publikus források külön gyűjteményága
+
+- Állapot: IMPLEMENTED.
+- Branch: sources/pinned-project-baseline, commit 1da31bdd7850665d963906dfc8a4d97b2788e94d.
+- 7 eredeti publikus forrás külön Git submodule-ban, nincs modul/runtime összemosás.
+- A privát/érzékeny fájlok nem kerülnek automatikusan publikálásra.

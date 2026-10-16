@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0.0",
+  "project": "Project Icarus",
+  "generated_at": "2026-10-16",
+  "description": "Research-only external sources. Not installed or enabled.",
+  "sources": [
+    {
+      "repo": "morluto/rea",
+      "sha": "1bd5c5c87e81b27bfb16140f71ffa03563e58477",
+      "topic": "reverse-engineering",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "debpalash/VoiceStudio",
+      "sha": "28d18023436229830debe8e65faf3eba4426f31b",
+      "topic": "hungarian-tts-candidate",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "mlimarenko/IronRAG",
+      "sha": "ad8f846aba5a4dd888eae8cf5033f5beb5c8d634",
+      "topic": "technical-rag",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "bytedance/deer-flow",
+      "sha": "2464566942ace4ffe71d347fde3dd9868e2ecd5d",
+      "topic": "agent-orchestration-reference",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "obra/superpowers",
+      "sha": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "topic": "engineering-skills",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "AlphaSaleAidan/opus-5-5-x-gpt-skill-tree",
+      "sha": "d95cc14f11dff819f4e7ae8d1b9f5a22eeb58fe8",
+      "topic": "skill-router",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "sha": "162db92f54d717d8ebd12292e155aeef32bb4b3c",
+      "topic": "prompt-reference",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "asgeirtj/system_prompts_leaks",
+      "sha": "3c4deaae9bbd6259e3d972f3bdb208ef6fd942f9",
+      "topic": "prompt-reference",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "BeatAPI/awesome-3d-prompts",
+      "sha": "ac37217b7b723fbe38095503e06e3b818fbb1a85",
+      "topic": "3d-reference",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "zlxxlz1026/awesome-gpt-6-astra-casebook",
+      "sha": "ada87b35d4adfedef21816cd2969d0ff88a9427e",
+      "topic": "casebook",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "Anil-matcha/awesome-gpt-6-astra",
+      "sha": "22b75e2b1a900fb9ee9932f753d1bc46e4c9fd16",
+      "topic": "casebook",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "jaredrhod/fullstack-agent",
+      "sha": "5bb159f47dbd6fa8f108651d0532a43aef16346b",
+      "topic": "fullstack-wizard",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "jaredrhod/ai-memory-vault",
+      "sha": "659bba9c8b351c937dd393b3042801d1ff1b502c",
+      "topic": "markdown-memory",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "jaredrhod/backtalk",
+      "sha": "84b3a6cd321060cabb74aad6ebe794621cf99bd3",
+      "topic": "voice-engineering",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "jaredrhod/ai-visualizer",
+      "sha": "6921e1d4b06bdd4a34c5264882d5257c4d5f70fd",
+      "topic": "animated-face",
+      "status": "R_AND_D_PARKED"
+    },
+    {
+      "repo": "jaredrhod/barehands",
+      "sha": "eb23bed2d772f9d5a24de26fb92f46c3c76d69cf",
+      "topic": "gesture-3d-ui",
+      "status": "R_AND_D_PARKED"
+    }
+  ]
+}

@@ -52,3 +52,7 @@ Az integrációs ágon PyGPT és Add-ons **Git submodule**, nem másolt Git-tör
 ## Projektanyagok és magánszféra
 
 A feltöltött JARVIS-beszélgetés-exportokban és hanganyagokban lehet személyes információ, nem publikus projektadat vagy jogilag korlátozott audiotartalom. A nyilvános repositoryba csak tisztított műszaki dokumentációt írunk; teljes nyers beszélgetés-exportok és hangminták csak külön, ellenőrzött privát tárolásba kerülhetnek. Az ilyen állományokat itt dokumentált, de nem teljesített migrációs tételnek tekintjük.
+
+## Tényleges külön forrásgyűjtemény-ág
+
+**sources/pinned-project-baseline** @ 1da31bdd7850665d963906dfc8a4d97b2788e94d — 7 nyilvános Git submodule: PyGPT, PyGPT_Addons, original JARVIS, PhotoCraft, LightCraft, FilmCraft, FCC upstream. A branch saját .gitmodules és sources-manifest.json fájlt tartalmaz. Ezzel a később sorra kerülő programrészek forrása a Jarvis-2.0 keretében visszakereshető, de NINCS futtatva vagy összeolvasztva. A kutatási 16 repó továbbra is pinelt külső referencia, nem kötelező checkout. A privát AI-Proxy nem itt van.
