@@ -24,7 +24,7 @@
 | [07 — JARVIS GUI](docs/07-gui-compatibility.md) | Eredeti HUD, PyQt6 → PySide6, mérhető paritás |
 | [08 — IPC/API szerződés](docs/08-api-event-contracts.md) | Javasolt wire format, események, idempotencia |
 | [09 — Biztonság / licencek](docs/09-security-licensing.md) | Fenyegetési modell, privát adatok, ágankénti műveletek |
-| [10a — HeyPuter Everything technikai audit](docs/10a-heyputer-everything.md) | 60 webes alkalmazás, JARVIS P6 kreatív/CAD lehetőségek és kockázatok |
+| [10a — HeyPuter Everything technikai audit](docs/10a-heyputer-everything.md) | 51 ellenőrzött src/ alkalmazásmappa, P6 kreatív/CAD lehetőségek és kockázatok |
 | [10 — Kutatási backlog](docs/10-research-backlog.md) | REA, DeerFlow, VoiceStudio, IronRAG és új találatok |
 | [11 — Agent handoff](docs/11-agent-handoff.md) | Több chat/ügynök együttműködés és DeepLearn-protokoll |
 | [12 — Tesztmátrix](docs/12-test-matrix.md) | Regreszszió, integráció, kompatibilitás, evidencia |
